@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/msg")
 public class MyController {
 
+
+
     @GetMapping("getmsg")
     public String getMsg(@PathVariable String name)
     {
         return "msg";
     }
-
-    
 }
