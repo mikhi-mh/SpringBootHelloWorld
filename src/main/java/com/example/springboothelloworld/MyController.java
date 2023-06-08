@@ -9,9 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/msg")
 public class MyController {
 
-    @GetMapping("getMsg/{name}")
-    public String getMsg(@PathVariable String name){
-        return "नमस्कार " + name + " how are you";
-    }
 
+
+    @GetMapping("getmsg")
+    public String getMsg(@PathVariable String name)
+    {
+        return "msg";
+    }
 }
